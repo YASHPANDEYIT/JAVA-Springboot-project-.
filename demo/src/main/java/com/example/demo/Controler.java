@@ -57,4 +57,10 @@ public class Controler {
                 .block();
         return ResponseEntity.ok(response);
     }
+    @GetMapping("/greetings")
+    public ResponseEntity<String> greetings() {
+    	String response = "Hi welcome to springboot";
+        
+        return ResponseEntity.ok(response);
+    }
 }
