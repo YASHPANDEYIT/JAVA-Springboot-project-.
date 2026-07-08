@@ -63,4 +63,19 @@ public class Controler {
         
         return ResponseEntity.ok(response);
     }
+    @GetMapping("/Hello")
+    public ResponseEntity<String> Hello()
+    {
+    	String Res = "Hello its Me";
+    	return new ResponseEntity<>(Res,HttpStatus.OK);
+    }
+    
+    @GetMapping("/getBalance/{id}")
+    public ResponseEntity<Integer> getBalance(@PathVariable int id)
+    {
+    	int bal = s.getBal(id);
+		return new ResponseEntity<>(bal,HttpStatus.OK);
+    	
+    }
+   
 }

@@ -10,6 +10,16 @@ public class Entity {
 	private String name;
 	@jakarta.persistence.Id
 	private int Id;
+	private int AccBal;
+	public int getAccBal()
+	{ 
+		return AccBal;
+		}
+	public void setAccBal(int AccBal)
+	{
+		this.AccBal=AccBal;
+	}
+	
 	public String getName() {
 		return name;
 	}
