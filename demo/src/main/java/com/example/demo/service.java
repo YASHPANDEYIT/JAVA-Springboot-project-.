@@ -38,6 +38,13 @@ public String removeEntity(int id)
 
 }
 
+public int getBal(int id)
+{
+	int bal = repo.findById(id).get().getAccBal();
+	return bal;
+
+}
+
 
 		
 }
